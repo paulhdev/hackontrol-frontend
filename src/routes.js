@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
 
-function Routes() {
+export default function Routes() {
   return (
     <BrowserRouter>
       <Switch>
@@ -12,5 +12,3 @@ function Routes() {
     </BrowserRouter>
   );
 }
-
-export default Routes;
