@@ -1,45 +1,26 @@
-import React, { useState } from 'react';
-import {
-  Navbar,
-  NavbarBrand,
-  NavbarToggler,
-  Collapse,
-  Nav,
-  NavItem,
-  NavLink,
-} from 'reactstrap';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-export default function Header() {
-  const [open, setOpen] = useState(false);
+// import Logo from '../../assets/hk_logo.svg';
 
-  const toggle = () => {
-    setOpen(!open);
-  };
+import { HeaderStyle } from './style';
 
+function Header() {
   return (
-    <header>
-      <Navbar color="light" light expand="md">
-        <div className="container">
-          <NavbarBrand>
-            Minhas Séries
-          </NavbarBrand>
-          <NavbarToggler onClick={toggle} />
-          <Collapse isOpen={open} navbar>
-            <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink>
-                  Séries
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink>
-                  Gêneros
-                </NavLink>
-              </NavItem>
-            </Nav>
-          </Collapse>
-        </div>
-      </Navbar>
-    </header>
+    <HeaderStyle>
+      <Link to="/">
+        <h1>Hackontrol</h1>
+      </Link>
+      <nav>
+        <Link to="/companies">Para empresas</Link>
+        <Link to="/candidates">Para Candidatos</Link>
+        <button>
+          <i className="fa fa-user-circle" />
+        </button>
+        <input className="search-input" type="search" placeholder="Buscar eventos..." />
+      </nav>
+    </HeaderStyle>
   );
 }
+
+export default Header;
