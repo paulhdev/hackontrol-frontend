@@ -1,6 +1,8 @@
 import React from 'react';
 
-import { Banner, FormEvent } from './style';
+import { Banner, FormEvent, NextEvents } from './style';
+
+import Cards from '../cards';
 
 function Home() {
   return (
@@ -24,6 +26,12 @@ function Home() {
           </FormEvent>
         </div>
       </Banner>
+      <NextEvents>
+        <h2>Próximos eventos</h2>
+        <div>
+          <Cards />
+        </div>
+      </NextEvents>
     </div>
   );
 }

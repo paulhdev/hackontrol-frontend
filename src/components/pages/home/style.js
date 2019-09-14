@@ -1,10 +1,5 @@
 import styled from 'styled-components';
-import BannerImage from '../../assets/code.jpg';
-
-export const Container = styled.div`
-  width: 100%;
-  max-width: 920px;
-`;
+import BannerImage from '../../../assets/code.jpg';
 
 export const Banner = styled.section`
   position: relative;
@@ -78,6 +73,7 @@ export const FormEvent = styled.form`
   }
 
   button {
+    cursor: pointer;
     width: 334px;
     height: 70px;
     background: #34007e;
@@ -87,5 +83,28 @@ export const FormEvent = styled.form`
     margin-top: 10px;
     border: none;
     border-radius: 2px;
+  }
+`;
+
+export const NextEvents = styled.section`
+  padding: 60px;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 `;

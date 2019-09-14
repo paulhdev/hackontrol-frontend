@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import Logo from '../../../assets/hk_shadow_logo_white.svg';
+
 // import Logo from '../../assets/hk_logo.svg';
 
 import { HeaderStyle } from './style';
@@ -9,7 +11,9 @@ function Header() {
   return (
     <HeaderStyle>
       <Link to="/">
-        <h1>Hackontrol</h1>
+        <h1>
+          <img src={Logo} alt="HK hackontrol"/>
+        </h1>
       </Link>
       <nav>
         <Link to="/candidates">Para participantes</Link>
