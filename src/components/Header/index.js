@@ -12,12 +12,14 @@ function Header() {
         <h1>Hackontrol</h1>
       </Link>
       <nav>
+        <Link to="/candidates">Para participantes</Link>
         <Link to="/companies">Para empresas</Link>
-        <Link to="/candidates">Para Candidatos</Link>
         <button>
           <i className="fa fa-user-circle" />
         </button>
-        <input className="search-input" type="search" placeholder="Buscar eventos..." />
+        <button>
+          <i className="fa fa-search"></i>
+        </button>
       </nav>
     </HeaderStyle>
   );

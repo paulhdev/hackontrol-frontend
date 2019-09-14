@@ -31,14 +31,6 @@ export const HeaderStyle = styled.header`
   button i {
     font-size: 25px;
     color: #fff;
-    margin: 0 10px;
-  }
-
-  input.search-input {
-    border: 0;
-    border-radius: 25px;
-    height: 25px;
-    margin: 0 10px;
-    padding: 0 10px;
+    margin: 0 20px;
   }
 `;
