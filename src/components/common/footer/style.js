@@ -1,9 +1,14 @@
 import styled from 'styled-components'
 
 export const FooterContainer = styled.footer`
+    position: fixed;
+    bottom: 0;
     background: #3F3E3E;
+    width: 100%;
     min-height: auto;
     padding: 20px 0 20px 0;
+
+    z-index: 9999;
 `
 
 export const TitleRow = styled.div`
