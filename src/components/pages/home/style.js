@@ -9,6 +9,7 @@ export const Banner = styled.section`
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 100%;
+  margin-top: 60px;
 
   .overflow {
     position: absolute;
@@ -20,7 +21,7 @@ export const Banner = styled.section`
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 10px 60px;
+    padding: 20px 60px;
     background: linear-gradient(90deg, rgba(86, 48, 140, 0.6) 0%, rgba(188, 188, 188, 0.6) 100%);
   }
 
@@ -116,6 +117,6 @@ export const NextEvents = styled.section`
     text-align: center;
     letter-spacing: -0.02em;
     text-decoration-line: underline;
-    margin-top: 30px;
+    margin: 30px 0;
   }
 `;

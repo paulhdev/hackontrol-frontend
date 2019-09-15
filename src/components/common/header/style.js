@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const HeaderStyle = styled.header`
+  position: fixed;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,6 +10,8 @@ export const HeaderStyle = styled.header`
   height: 72px;
   padding: 10px 30px;
   background-color: #2f0073;
+
+  z-index: 9999;
 
   img {
     width: 300px;

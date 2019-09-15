@@ -17,12 +17,12 @@ function Home() {
         <div className="overflow">
           <article className="content">
             <h1>
-              Todos os 
-{' '}
-<br />
-              Hackathons em um 
-{' '}
-<br />
+              Todos os
+              {' '}
+              <br />
+              Hackathons em um
+              {' '}
+              <br />
               só lugar
             </h1>
             <p>Centenas de hackathons e eventos online para você ou para sua empresa</p>
