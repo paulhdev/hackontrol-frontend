@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Layout from './App';
 import Home from './components/pages/home';
 import CreateEvent from './components/pages/enterprise/createEvent';
+import AboutEvent from './components/pages/enterprise/aboutEvent';
 
 export default function Routes() {
   return (
@@ -25,6 +26,15 @@ export default function Routes() {
           render={(props) => (
             <Layout>
               <CreateEvent />
+            </Layout>
+          )}
+        />
+        <Route
+          exact
+          path="/aboutEvent/:id"
+          render={(params) => (
+            <Layout>
+              <AboutEvent {...params} />
             </Layout>
           )}
         />

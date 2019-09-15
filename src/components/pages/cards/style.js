@@ -25,8 +25,6 @@ export const Card = styled.article`
   img {
     width: 315px;
     height: 149px;
-    left: 131px;
-    top: 853px;
     margin: 5px;
   }
 
@@ -40,9 +38,10 @@ export const Card = styled.article`
     letter-spacing: -0.02em;
   }
 
-  button {
+  a {
     width: 334px;
     height: 70px;
+    min-height: 70px;
     left: 985px;
     top: 1060px;
     border: none;
@@ -50,7 +49,10 @@ export const Card = styled.article`
     background: #34007e;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-top: 30px;
-    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 
     font-style: normal;
     font-weight: 600;
