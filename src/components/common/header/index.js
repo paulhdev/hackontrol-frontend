@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 
 import Logo from '../../../assets/hk_shadow_logo_white.svg';
 
-// import Logo from '../../assets/hk_logo.svg';
-
 import { HeaderStyle } from './style';
 
 function Header() {
@@ -12,17 +10,17 @@ function Header() {
     <HeaderStyle>
       <Link to="/">
         <h1>
-          <img src={Logo} alt="HK hackontrol"/>
+          <img src={Logo} alt="HK hackontrol" />
         </h1>
       </Link>
       <nav>
-        <Link to="/candidates">Para participantes</Link>
+        <Link to="/participants">Para participantes</Link>
         <Link to="/companies">Para empresas</Link>
         <button>
           <i className="fa fa-user-circle" />
         </button>
         <button>
-          <i className="fa fa-search"></i>
+          <i className="fa fa-search" />
         </button>
       </nav>
     </HeaderStyle>

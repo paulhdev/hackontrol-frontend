@@ -97,8 +97,6 @@ export const NextEvents = styled.section`
     font-weight: bold;
     font-size: 36px;
     line-height: 44px;
-    align-items: center;
-    text-align: center;
     letter-spacing: -0.02em;
   }
 
@@ -106,5 +104,18 @@ export const NextEvents = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  a {
+    display: block;
+    color: #000;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-decoration-line: underline;
+    margin-top: 30px;
   }
 `;
