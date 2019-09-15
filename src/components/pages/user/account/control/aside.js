@@ -1,4 +1,6 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUserCircle } from '@fortawesome/free-solid-svg-icons'
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import ListItemText from '@material-ui/core/ListItemText'
@@ -11,7 +13,7 @@ export default function Aside() {
         <AsideContainer>
             <List component="nav">
                 <ListItem button>
-                    <ListItemText primary="Avatar" />
+                    <FontAwesomeIcon icon={faUserCircle} size="6x" style={{ margin: 'auto' }} />
                 </ListItem>
                 <Divider />
                 <ListItem button>
