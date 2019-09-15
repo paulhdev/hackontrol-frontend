@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import logo from '../../../../../assets/code2.jpg'
+import logo from '../../../../assets/user.jpg'
 
 export const HeadContainer = styled.div`
     width: 100%;

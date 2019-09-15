@@ -2,7 +2,6 @@ import React from 'react'
 
 import { HeadContainer } from './style'
 
-const Head = () =>
-    <HeadContainer />
+const UserHead = () => <HeadContainer />
 
-export default Head
+export default UserHead

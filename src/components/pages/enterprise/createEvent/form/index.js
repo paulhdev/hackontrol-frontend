@@ -6,7 +6,7 @@ const Form = () =>
         <InputContainer>
             <FormTitle>Novo evento</FormTitle>
             <InputText>
-                <input placeholder='Titulo' style={{ width: '100%' }} />
+                <input placeholder='Título' style={{ width: '100%' }} />
                 <input placeholder='Local' style={{ width: '70%' }} />
                 <input placeholder='Cidade' style={{ width: '13%' }} />
                 <input placeholder='UF' style={{ width: '13%' }} />
@@ -14,7 +14,7 @@ const Form = () =>
         </InputContainer>
 
         <CardContainer>
-            <FormTitle>Periodo do evento</FormTitle>
+            <FormTitle>Período do evento</FormTitle>
             <InputNumber>
                 <input type='date' placeholder='De' style={{ padding: '20px 0' }} />
                 <input type='date' placeholder='Ate' style={{ padding: '20px 0' }} />
@@ -22,7 +22,7 @@ const Form = () =>
         </CardContainer>
 
         <CardContainer>
-            <FormTitle>Numero de participantes</FormTitle>
+            <FormTitle>Número de participantes</FormTitle>
             <InputNumber>
                 <input type='number' placeholder='Min' />
                 <input type='number' placeholder='Max' />
@@ -30,7 +30,7 @@ const Form = () =>
         </CardContainer>
 
         <CardContainer>
-            <FormTitle>Numero de membros por equipe</FormTitle>
+            <FormTitle>Número de membros por equipe</FormTitle>
             <InputNumber>
                 <input type='number' placeholder='Min' />
                 <input type='number' placeholder='Max' />
