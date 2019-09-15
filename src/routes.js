@@ -11,6 +11,7 @@ import UserHead from './components/pages/user/head'
 // BODY
 import CreateEvent from './components/pages/enterprise/createEvent'
 import UserControl from './components/pages/user/account/control'
+import AboutEvent from './components/pages/enterprise/aboutEvent';
 
 export default function Routes() {
 	return (
@@ -36,6 +37,15 @@ export default function Routes() {
 					</Layout>
 				)} />
 
+				<Route
+					exact
+					path="/aboutEvent/:id"
+					render={(params) => (
+						<Layout>
+							<AboutEvent {...params} />
+						</Layout>
+					)}
+				/>
 			</Switch>
 		</BrowserRouter>
 	);

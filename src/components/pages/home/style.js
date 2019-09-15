@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import BannerImage from '../../../assets/code.jpg';
+import ImageSectionEmail from '../../../assets/office.jpg';
 
 export const Banner = styled.section`
   position: relative;
@@ -11,7 +12,7 @@ export const Banner = styled.section`
   max-width: 100%;
   margin-top: 60px;
 
-  .overflow {
+  .overlay {
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -66,7 +67,7 @@ export const FormEvent = styled.form`
     width: 334px;
     margin-bottom: 20px;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 18px;
     background: #ffffff;
     border: 1px solid #696969;
     box-sizing: border-box;
@@ -117,6 +118,80 @@ export const NextEvents = styled.section`
     text-align: center;
     letter-spacing: -0.02em;
     text-decoration-line: underline;
-    margin: 30px 0;
+    margin: 40px 0;
   }
+`;
+
+export const Newsletter = styled.section`
+  position: relative;
+  width: 100%;
+  height: 322px;
+  background-image: url(${ImageSectionEmail});
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  margin-top: -40px;
+  margin-bottom: 60px;
+
+  .overlay {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px 60px;
+    background: linear-gradient(90.09deg, #34007E 0.02%, rgba(229, 229, 229, 0) 235.4%);
+  }
+
+  p {
+    color: #fff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+  }
+
+  form {
+    margin-top: 30px;
+    display: flex;
+
+    input {
+      width: 468px;
+      height: 70px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 29px;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.02em;
+      padding-left: 10px;
+    }
+
+    button {
+      width: 334px;
+      height: 70px;
+      background: #34007E;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border: 2px solid #fff;
+      border-radius: 2px;
+      margin-left: 30px;
+      cursor: pointer;
+      color: #fff;
+      font-style: normal;
+      text-align: center;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+      letter-spacing: -0.02em;
+    }
+  }
+
 `;

@@ -1,0 +1,28 @@
+{
+  "events": [
+    {
+      "id": "1",
+      "name": "Shawee",
+      "eventTitle": "Open Hack 2019",
+      "eventDescription": "Evento aberto para aqueles que amam desafios, desenvolver soluções, aumentar seu networking e obter mais conhecimento.",
+      "date": "09/09/2019",
+      "image": "https://cdn.discordapp.com/attachments/621536389925830672/621537290803478556/image_1550750294_logo-shawee-png-1.png"
+    },
+    {
+      "id": "2",
+      "name": "techgroup",
+      "eventTitle": "Hackathon BR 3ª edição",
+      "eventDescription": "Venha participar da 3ª edição de hackathon da techgroup.",
+      "date": "07/10/2019",
+      "image": "https://cdn.discordapp.com/attachments/621536389925830672/621537007994142730/empresa_logo.svg"
+    },
+    {
+      "id": "3",
+      "name": "hive",
+      "eventTitle": "9º Meetup Hive Eventos",
+      "eventDescription": "Venha conferir o 9º Meetup e expandir não só seu conhecimento, mas também seu networking :)",
+      "date": "Em Breve",
+      "image": "https://cdn.discordapp.com/attachments/621536389925830672/621892117765292062/hive_logo.svg"
+    }
+  ]
+}

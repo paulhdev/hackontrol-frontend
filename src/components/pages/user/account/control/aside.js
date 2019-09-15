@@ -9,13 +9,28 @@ import { AsideContainer } from './style'
 export default function Aside() {
     return (
         <AsideContainer>
-            <ul>
-                <li>Avatar</li>
-                <li>Meus dados</li>
-                <li>LGPD - Conheça seus direitos</li>
-                <li>Termos da Hackontrol</li>
-                <li>Logout</li>
-            </ul>
+            <List component="nav">
+                <ListItem button>
+                    <ListItemText primary="Avatar" />
+                </ListItem>
+                <Divider />
+                <ListItem button>
+                    <ListItemText primary="Meus dados" />
+                </ListItem>
+                <Divider />
+                <ListItem button>
+                    <ListItemText primary="LGPD - Conheça seus direitos" />
+                </ListItem>
+                <Divider />
+                <ListItem button>
+                    <ListItemText primary="Termos da Hackontrol" />
+                </ListItem>
+                <Divider />
+                <ListItem button>
+                    <ListItemText primary="Logout" />
+                </ListItem>
+                <Divider />
+            </List>
         </AsideContainer>
     )
 }
