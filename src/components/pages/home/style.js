@@ -132,7 +132,6 @@ export const Newsletter = styled.section`
   background-repeat: no-repeat;
   max-width: 100%;
   margin-top: -40px;
-  margin-bottom: 45px;
 
   .overlay {
     position: absolute;
