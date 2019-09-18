@@ -5,12 +5,12 @@ import ImageSectionEmail from '../../../assets/office.jpg';
 export const Banner = styled.section`
   position: relative;
   width: 100%;
-  height: 550px;
+  height: 455px;
   background-image: url(${BannerImage});
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 100%;
-  margin-top: 60px;
+  margin-top: 55px;
 
   .overlay {
     position: absolute;
@@ -43,8 +43,8 @@ export const Banner = styled.section`
 `;
 
 export const FormEvent = styled.form`
-  width: 465px;
-  height: 488px;
+  width: 360px;
+  height: 400px;
   background: #fff;
   padding: 20px;
   border: none;
@@ -132,7 +132,7 @@ export const Newsletter = styled.section`
   background-repeat: no-repeat;
   max-width: 100%;
   margin-top: -40px;
-  margin-bottom: 60px;
+  margin-bottom: 45px;
 
   .overlay {
     position: absolute;
@@ -162,8 +162,8 @@ export const Newsletter = styled.section`
     display: flex;
 
     input {
-      width: 468px;
-      height: 70px;
+      width: 100%;
+      height: 45px;
       font-style: normal;
       font-weight: normal;
       font-size: 24px;
@@ -176,7 +176,7 @@ export const Newsletter = styled.section`
 
     button {
       width: 334px;
-      height: 70px;
+      height: 45px;
       background: #34007E;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       border: 2px solid #fff;
