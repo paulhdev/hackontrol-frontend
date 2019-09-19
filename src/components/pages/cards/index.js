@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import api from '../../../services/api';
-
-import { Card } from './style';
+import ShaweeLogo from '../../../assets/shawee.png';
+import TechGroup from '../../../assets/techgroup.svg';
+import HiveLogo from '../../../assets/hive_logo.svg';
+import { Card, Button } from './style';
 
 function Cards() {
   const [data, setData] = useState([]);
@@ -16,11 +18,11 @@ function Cards() {
 
   return (
     <div>
-      {
+      {/* {
         !data.length
           && <p>Ops! Não há eventos no momento :(</p>
-      }
-      {
+      } */}
+      {/* {
         data.map((companie) => (
           <Card key={companie.id}>
             <strong>{companie.eventTitle}</strong>
@@ -31,25 +33,25 @@ function Cards() {
             </Link>
           </Card>
         ))
-      }
-      {/* <Card>
+      } */}
+      <Card>
         <strong>Open Hack 2019</strong>
         <img src={ShaweeLogo} alt="shawee" />
         <p>09/09/2019</p>
-        <button>Mais informações</button>
+        <Button>Mais informações</Button>
       </Card>
       <Card>
         <strong>Hackathon BR 3ª edição</strong>
-        <img src={TechGroup} alt="shawee" />
+        <img src={TechGroup} alt="techgroup" />
         <p>07/10/2019</p>
-        <button>Mais informações</button>
+        <Button>Mais informações</Button>
       </Card>
       <Card>
         <strong>9º Meetup Hive Eventos</strong>
-        <img src={HiveLogo} alt="shawee" />
+        <img src={HiveLogo} alt="hive" />
         <p>Em Breve</p>
-        <button>Mais informações</button>
-      </Card> */}
+        <Button>Mais informações</Button>
+      </Card>
     </div>
   );
 }
