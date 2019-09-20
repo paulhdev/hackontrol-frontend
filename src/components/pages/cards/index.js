@@ -18,40 +18,23 @@ function Cards() {
 
   return (
     <div>
-      {/* {
+      {
         !data.length
-          && <p>Ops! Não há eventos no momento :(</p>
-      } */}
-      {/* {
+          && <p>Ops! No Events :(</p>
+      }
+      {
         data.map((companie) => (
           <Card key={companie.id}>
             <strong>{companie.eventTitle}</strong>
             <img src={companie.image} alt={companie.name} />
             <p>{companie.date}</p>
             <Link to={`/aboutEvent/${companie.id}`}>
-              Mais informações
+              More Informations
             </Link>
           </Card>
         ))
-      } */}
-      <Card>
-        <strong>Open Hack 2019</strong>
-        <img src={ShaweeLogo} alt="shawee" />
-        <p>09/09/2019</p>
-        <Button>Mais informações</Button>
-      </Card>
-      <Card>
-        <strong>Hackathon BR 3ª edição</strong>
-        <img src={TechGroup} alt="techgroup" />
-        <p>07/10/2019</p>
-        <Button>Mais informações</Button>
-      </Card>
-      <Card>
-        <strong>9º Meetup Hive Eventos</strong>
-        <img src={HiveLogo} alt="hive" />
-        <p>Em Breve</p>
-        <Button>Mais informações</Button>
-      </Card>
+      }
+
     </div>
   );
 }
