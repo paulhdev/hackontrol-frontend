@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const FormContainer = styled.form`
-    font-family: 'Montserrat', sans-serif;
     position: absolute;
     top: 20%;
     right: 20%;
