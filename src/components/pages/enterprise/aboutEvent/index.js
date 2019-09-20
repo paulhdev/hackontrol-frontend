@@ -27,18 +27,18 @@ function AboutEvent({ match }) {
           <InfoArea>
             <img src={data.image} alt={data.name} />
             <strong>
-              Evento:
+              Event:
               {' '}
               {data.eventTitle}
             </strong>
-            <strong>Sobre o evento:</strong>
+            <strong>About event:</strong>
             <p>{data.eventDescription}</p>
             <p className="date">
-              Começa em:
+              Start:
               {' '}
               {data.date}
             </p>
-            <button onClick={handleSignUp}>Inscrever-se</button>
+            <button onClick={handleSignUp}>Sign-up</button>
           </InfoArea>
         }
       </section>
