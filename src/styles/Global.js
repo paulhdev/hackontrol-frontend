@@ -8,11 +8,14 @@ const GlobalStyle = createGlobalStyle`
     outline: none;
   }
 
-  @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
 
   body {
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     color: #000;
+    * {
+      font-family: 'Montserrat', sans-serif;
+    }
   }
 `;
 

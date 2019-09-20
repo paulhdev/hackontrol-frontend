@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const FormContainer = styled.form`
+    font-family: 'Montserrat', sans-serif;
     position: absolute;
     top: 20%;
     right: 20%;
@@ -15,6 +16,8 @@ export const FormContainer = styled.form`
 
 export const InputContainer = styled.div`
     flex: 0 0 100%;
+    justify-content: space-between;
+    align-items: space-between;
 `
 
 export const CardContainer = styled.div`
@@ -35,10 +38,6 @@ export const InputText = styled.div`
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    & input {
-        padding: 20px 5px;
-        margin: 20px 0;
-    }
 `
 
 export const InputNumber = styled.div`
