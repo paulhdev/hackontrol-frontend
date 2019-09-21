@@ -10,7 +10,7 @@ import Cards from '../cards';
 function Home() {
   const InputEnv = (e) => {
     e.preventDefault();
-    alert('Ops! Função indisponivel :(');
+    alert('Ops! :(');
   };
 
   return (
@@ -19,45 +19,43 @@ function Home() {
         <div className="overlay">
           <article className="content">
             <h1>
-              Todos os
+            Hackathons
               {' '}
               <br />
-              Hackathons em um
+              in
               {' '}
               <br />
-              só lugar
+              One Place
             </h1>
-            <p>Centenas de hackathons e eventos online para você ou para sua empresa</p>
+            <p>several online hackathons for you or your business</p>
           </article>
           <FormEvent>
-            <p>Encontre o evento mais perto de você</p>
-            <input type="text" placeholder="Digite Cidade, Estado ou Região" />
-            <p>Ou procure por um evento online</p>
-            <input type="text" placeholder="Digite o nome ou tipo do evento" />
+            <p>Search for an online event</p>
+            <input type="text" placeholder="event name" />
             <button onClick={InputEnv}>Buscar</button>
           </FormEvent>
         </div>
       </Banner>
       <NextEvents>
-        <h2>Próximos eventos</h2>
+        <h2>Next Events</h2>
         <div>
           <Cards />
         </div>
-        <Link to="/">Ver mais</Link>
+        <Link to="/">More...</Link>
       </NextEvents>
       <Newsletter>
         <div className="overlay">
           <article>
             <p>
-              Assine nossa newsletter e não
+            Subscribe to our newsletter and
               {' '}
               <br />
               {' '}
-              perca mais nenhum evento!
+              don't miss any more events!
             </p>
             <form>
-              <input type="email" placeholder="Seu melhor e-mail..." />
-              <button onClick={InputEnv}>Assinar</button>
+              <input type="email" placeholder="Your e-mail..." />
+              <button onClick={InputEnv}>Sign</button>
             </form>
           </article>
         </div>
