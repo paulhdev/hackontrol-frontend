@@ -1,12 +1,21 @@
 import React from 'react';
 import {
-  AppBar, Tabs, Tab, Modal, TextField, Button, IconButton, Icon,
+  AppBar, Avatar, Tabs, Tab, Modal, TextField, Button, IconButton, Icon, InputBase,
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import DeleteIcon from '@material-ui/icons/Delete';
+import Yasmin from '../../../../../assets/users/Yasmin.jpg';
+import Henrique from '../../../../../assets/users/Henrique.jpg';
+import Filipe from '../../../../../assets/users/Filipe.jpg';
+import Hidemitsu from '../../../../../assets/users/Hidemitsu.jpg';
+import Paulo from '../../../../../assets/users/Paulo.jpg';
 
 
 const useStyles = makeStyles((theme) => ({
+  avatar: {
+    margin: 10,
+    display: 'inline-block',
+  },
   root: {
     width: '80%',
     margin: 'auto',
@@ -38,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
     listStyle: 'none',
   },
   bodyContainer: {
-    textAlign: 'left',
+    textAlign: 'center',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-around',
@@ -57,7 +66,27 @@ export default function UserControl() {
   const [value, setValue] = React.useState(1);
   const [open, setOpen] = React.useState(true);
 
-  const teamNames = ['Yasmin Laurent', 'Henrique Souza', 'Filipe Alves', 'Pedro Spinola', 'Paulo Henrique'];
+  const teamNames = [
+	 {
+      name: 'Yasmin Laurent',
+		 url: Yasmin,
+    },
+	 {
+      name: 'Henrique Souza',
+	 url: Henrique,
+    },
+	 {
+      name: 'Filipe Alves',
+	 url: Filipe,
+    },
+	 {
+      name: 'Hidemitsu ',
+	 url: Hidemitsu,
+    },
+	 {
+      name: 'Paulo Henrique',
+	 url: Paulo,
+    }];
 
   function handleChange(event, newValue) {
     setValue(newValue);
@@ -103,29 +132,33 @@ export default function UserControl() {
           <ul className={classes.list}>
             {teamNames.map((item, index) => (
               <li>
+                <Avatar alt="Remy Sharp" src={item.url} className={classes.avatar} />
                 {
-                <TextField
-                id="name"
-                value={item}
-                label="Name"
-                margin="normal"
-                disabled
+                  <span>
+
+                    <InputBase
+                      id="name"
+                      value={item.name}
+                      label="Name"
+                      margin="normal"
+                      disabled
 								/>
+                  </span>
 							}
 
                 <IconButton variant="contained" color="secondary" style={{ color: '#2f0073' }}>
-                <DeleteIcon className={classes.rightIcon} />
-              </IconButton>
+                  <DeleteIcon className={classes.rightIcon} />
+                </IconButton>
               </li>
             ),
             )}
           </ul>
         </div>
         <div className={classes.bodyDiv}>
-          <h3>Project Link</h3>
+          <h3>Product Hunt Link</h3>
           <TextField
             id="name"
-            label="Project Link"
+            label="Product Hunt Link"
             margin="normal"
             fullWidth
 					/>
