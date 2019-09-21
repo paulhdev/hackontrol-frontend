@@ -10,10 +10,23 @@ import {
 
 export default function Form() {
     const [selectedDate, setSelectedDate] = React.useState(new Date());
+    const [selectedDate2, setSelectedDate2] = React.useState(new Date());
+    const [selectedDate3, setSelectedDate3] = React.useState(new Date());
+    const [selectedDate4, setSelectedDate4] = React.useState(new Date());
 
     function handleDateChange(date) {
         setSelectedDate(date);
     }
+    function handleDateChange2(date) {
+        setSelectedDate2(date);
+    }
+    function handleDateChange3(date) {
+        setSelectedDate3(date);
+    }
+    function handleDateChange4(date) {
+        setSelectedDate4(date);
+    }
+
     return (
         <FormContainer>
             <InputContainer>
@@ -63,8 +76,8 @@ export default function Form() {
                         id="date-picker-dialog"
                         label="End"
                         format="DD/MM/YYYY"
-                        value={selectedDate}
-                        onChange={handleDateChange}
+                        value={selectedDate2}
+                        onChange={handleDateChange2}
                         style={{ width: '30%' }}
                     />
                 </Grid>
@@ -75,8 +88,8 @@ export default function Form() {
                         id="date-picker-dialog"
                         label="Start"
                         format="DD/MM/YYYY"
-                        value={selectedDate}
-                        onChange={handleDateChange}
+                        value={selectedDate3}
+                        onChange={handleDateChange3}
                         style={{ width: '30%' }}
                     />
                     <KeyboardDatePicker
@@ -84,8 +97,8 @@ export default function Form() {
                         id="date-picker-dialog"
                         label="End"
                         format="DD/MM/YYYY"
-                        value={selectedDate}
-                        onChange={handleDateChange}
+                        value={selectedDate4}
+                        onChange={handleDateChange4}
                         style={{ width: '30%' }}
                     />
                 </Grid>
@@ -109,7 +122,7 @@ export default function Form() {
                     />
                 </Grid>
                 <Grid container justify="space-around" style={{ width: '50%', margin: '30px 0' }}>
-                    <FormTitle>Número de membros por equipe</FormTitle>
+                    <FormTitle>Number of members per team</FormTitle>
                     <TextField
                         id="outlined-number"
                         label="Min"
@@ -130,7 +143,7 @@ export default function Form() {
             </MuiPickersUtilsProvider>
 
             <ButtonContainer>
-                <FormButton>Criar evento</FormButton>
+                <FormButton>Create event</FormButton>
             </ButtonContainer>
         </FormContainer>
     )
