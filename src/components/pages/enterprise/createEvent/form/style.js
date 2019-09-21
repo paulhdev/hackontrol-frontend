@@ -11,6 +11,8 @@ export const FormContainer = styled.form`
     align-items: flex-end;
     flex-wrap: wrap;
     width: 60%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
 `
 
 export const InputContainer = styled.div`

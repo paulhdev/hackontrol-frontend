@@ -17,28 +17,28 @@ export default function Form() {
     return (
         <FormContainer>
             <InputContainer>
-                <FormTitle>Novo evento</FormTitle>
+                <FormTitle>New event</FormTitle>
                 <InputText>
                     <TextField
-                        label="Título"
+                        label="Title"
                         margin="normal"
                         variant="outlined"
                         style={{ width: '100%' }}
                     />
                     <TextField
-                        label="Local"
+                        label="Address"
                         margin="normal"
                         variant="outlined"
                         style={{ width: '70%' }}
                     />
                     <TextField
-                        label="Cidade"
+                        label="City"
                         margin="normal"
                         variant="outlined"
                         style={{ width: '13%' }}
                     />
                     <TextField
-                        label="UF"
+                        label="Country"
                         margin="normal"
                         variant="outlined"
                         style={{ width: '13%' }}
@@ -47,69 +47,87 @@ export default function Form() {
             </InputContainer>
 
             <MuiPickersUtilsProvider utils={MomentUtils}>
-                <Grid container justify="space-around">
-                    <FormTitle>Período de inscrições</FormTitle>
+                <Grid container justify="space-around" style={{ width: '50%', margin: '30px 0' }}>
+                    <FormTitle>Application Period</FormTitle>
                     <KeyboardDatePicker
                         margin="normal"
                         id="date-picker-dialog"
-                        label="Inicio"
+                        label="Start"
                         format="DD/MM/YYYY"
                         value={selectedDate}
                         onChange={handleDateChange}
+                        style={{ width: '30%' }}
                     />
                     <KeyboardDatePicker
                         margin="normal"
                         id="date-picker-dialog"
-                        label="Fim"
+                        label="End"
                         format="DD/MM/YYYY"
                         value={selectedDate}
                         onChange={handleDateChange}
+                        style={{ width: '30%' }}
                     />
                 </Grid>
-                <Grid container justify="space-around">
-                    <FormTitle>Período do evento</FormTitle>
+                <Grid container justify="space-around" style={{ width: '50%', margin: '30px 0' }}>
+                    <FormTitle>Event Period</FormTitle>
                     <KeyboardDatePicker
                         margin="normal"
                         id="date-picker-dialog"
-                        label="Inicio"
+                        label="Start"
                         format="DD/MM/YYYY"
                         value={selectedDate}
                         onChange={handleDateChange}
+                        style={{ width: '30%' }}
                     />
                     <KeyboardDatePicker
                         margin="normal"
                         id="date-picker-dialog"
-                        label="Fim"
+                        label="End"
                         format="DD/MM/YYYY"
                         value={selectedDate}
                         onChange={handleDateChange}
+                        style={{ width: '30%' }}
+                    />
+                </Grid>
+                <Grid container justify="space-around" style={{ width: '50%', margin: '30px 0' }}>
+                    <FormTitle>Number of participants</FormTitle>
+                    <TextField
+                        id="outlined-number"
+                        label="Min"
+                        type="number"
+                        margin="normal"
+                        variant="outlined"
+                        style={{ width: '30%' }}
+                    />
+                    <TextField
+                        id="outlined-number"
+                        label="Max"
+                        type="number"
+                        margin="normal"
+                        variant="outlined"
+                        style={{ width: '30%' }}
+                    />
+                </Grid>
+                <Grid container justify="space-around" style={{ width: '50%', margin: '30px 0' }}>
+                    <FormTitle>Número de membros por equipe</FormTitle>
+                    <TextField
+                        id="outlined-number"
+                        label="Min"
+                        type="number"
+                        margin="normal"
+                        variant="outlined"
+                        style={{ width: '30%' }}
+                    />
+                    <TextField
+                        id="outlined-number"
+                        label="Max"
+                        type="number"
+                        margin="normal"
+                        variant="outlined"
+                        style={{ width: '30%' }}
                     />
                 </Grid>
             </MuiPickersUtilsProvider>
-
-            <CardContainer>
-                <FormTitle>Período do evento</FormTitle>
-                <InputNumber>
-                    <input type='date' placeholder='De' style={{ padding: '20px 0' }} />
-                    <input type='date' placeholder='Ate' style={{ padding: '20px 0' }} />
-                </InputNumber>
-            </CardContainer>
-
-            <CardContainer>
-                <FormTitle>Número de participantes</FormTitle>
-                <InputNumber>
-                    <input type='number' placeholder='Min' />
-                    <input type='number' placeholder='Max' />
-                </InputNumber>
-            </CardContainer>
-
-            <CardContainer>
-                <FormTitle>Número de membros por equipe</FormTitle>
-                <InputNumber>
-                    <input type='number' placeholder='Min' />
-                    <input type='number' placeholder='Max' />
-                </InputNumber>
-            </CardContainer>
 
             <ButtonContainer>
                 <FormButton>Criar evento</FormButton>
