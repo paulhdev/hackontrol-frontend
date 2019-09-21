@@ -1,14 +1,34 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { makeStyles } from '@material-ui/core/styles';
+import AppBar from '@material-ui/core/AppBar';
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
+import Typography from '@material-ui/core/Typography';
+import Box from '@material-ui/core/Box';
 
-import { AccountContainer } from './style'
-import Aside from './aside'
-import UserSection from './userSection'
+const useStyles = makeStyles({
+	tabs: {
+		backgroundColor: 'white'
+	}
+})
 
 export default function UserControl() {
+	const classes = useStyles();
+	const [value, setValue] = React.useState(0);
+
+	function handleChange(event, newValue) {
+		setValue(newValue)
+	}
+
 	return (
-		<AccountContainer>
-			<Aside />
-			<UserSection />
-		</AccountContainer>
+		<div className={classes.root}>
+			<AppBar position="static">
+				<Tabs value={value} onChange={handleChange} aria-label="simple tabs example" centered textColor="primary" className={classes.tabs} >
+					<Tab label="Meu perfil" />
+					<Tab label="Equipes" />
+				</Tabs>
+			</AppBar>
+		</div>
 	)
 }
