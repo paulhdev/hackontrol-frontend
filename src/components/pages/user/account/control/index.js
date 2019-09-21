@@ -1,12 +1,10 @@
 import React from 'react';
+import {
+  AppBar, Tabs, Tab, Modal, TextField, Button, IconButton, Icon,
+} from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
-import Modal from '@material-ui/core/Modal';
-import TextField from '@material-ui/core/TextField';
-import Button from '@material-ui/core/Button';
 import DeleteIcon from '@material-ui/icons/Delete';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -74,15 +72,15 @@ export default function UserControl() {
   };
 
   return (
-  <div className={classes.root}>
-  <AppBar position="static">
-  <Tabs value={value} onChange={handleChange} aria-label="simple tabs example" centered textColor="primary" className={classes.tabs}>
-  <Tab label="My profile" />
-  <Tab label="Teams" active />
-				</Tabs>
-			</AppBar>
+    <div className={classes.root}>
+      <AppBar position="static">
+        <Tabs value={value} onChange={handleChange} aria-label="simple tabs example" centered textColor="primary" className={classes.tabs}>
+          <Tab label="My profile" />
+          <Tab label="Teams" active />
+        </Tabs>
+      </AppBar>
 
-  {/* <div>
+      {/* <div>
 				<h1 className={classes.text}>Your team has not been assembled yet</h1>
 			</div>
 			<Modal
@@ -99,40 +97,40 @@ export default function UserControl() {
           			</p>
 				</div>
 			</Modal> */}
-  <div className={classes.bodyContainer}>
-  <div className={classes.bodyDiv}>
-  <h3>Team 60</h3>
-  <ul className={classes.list}>
-  {teamNames.map((item, index) => (
-  <li>
-{
-								<TextField
-									id="name"
-									value={item}
-									label="Name"
-									margin="normal"
-									disabled
+      <div className={classes.bodyContainer}>
+        <div className={classes.bodyDiv}>
+          <h3>Team 60</h3>
+          <ul className={classes.list}>
+            {teamNames.map((item, index) => (
+              <li>
+                {
+                <TextField
+                id="name"
+                value={item}
+                label="Name"
+                margin="normal"
+                disabled
 								/>
 							}
-  <Button variant="contained" color="secondary" className={classes.button}>
-									Delete
-  <DeleteIcon className={classes.rightIcon} />
-								</Button>
-							</li>
-						),
-						)}
-					</ul>
-				</div>
-  <div className={classes.bodyDiv}>
-  <h3>Project Link</h3>
-  <TextField
-  id="name"
-  label="Project Link"
-  margin="normal"
-  fullWidth
+
+                <IconButton variant="contained" color="secondary" style={{ color: '#2f0073' }}>
+                <DeleteIcon className={classes.rightIcon} />
+              </IconButton>
+              </li>
+            ),
+            )}
+          </ul>
+        </div>
+        <div className={classes.bodyDiv}>
+          <h3>Project Link</h3>
+          <TextField
+            id="name"
+            label="Project Link"
+            margin="normal"
+            fullWidth
 					/>
-				</div>
-			</div>
-		</div>
+        </div>
+      </div>
+    </div>
   );
 }
