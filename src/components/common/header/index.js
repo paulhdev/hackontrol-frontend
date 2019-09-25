@@ -14,8 +14,8 @@ function Header() {
         </h1>
       </Link>
       <nav>
-        <Link to="/participants">For participants</Link>
-        <Link to="/companies">For Companies</Link>
+        <Link to="/user">For participants</Link>
+        <Link to="/createEvent">For Companies</Link>
         <button>
           <i className="fa fa-user-circle" />
         </button>
