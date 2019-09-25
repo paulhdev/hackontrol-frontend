@@ -17,35 +17,33 @@ export default function Routes() {
 	return (
 		<BrowserRouter>
 			<Switch>
-				<Route exact path="/" render={props => (
-					<Layout>
+				<Layout>
+					<Route exact path="/" render={props => (
 						<Home />
-					</Layout>
-				)} />
+					)} />
 
-				<Route exact path="/createEvent" render={props => (
-					<Layout>
-						<EnterpriseHead />
-						<CreateEvent />
-					</Layout>
-				)} />
+					<Route exact path="/createEvent" render={props => (
+						<>
+							<EnterpriseHead />
+							<CreateEvent />
+						</>
+					)} />
 
-				<Route exact path="/user" render={props => (
-					<Layout>
-						<UserHead />
-						<UserControl />
-					</Layout>
-				)} />
+					<Route exact path="/user" render={props => (
+						<>
+							<UserHead />
+							<UserControl />
+						</>
+					)} />
 
-				<Route
-					exact
-					path="/aboutEvent/:id"
-					render={(params) => (
-						<Layout>
+					<Route
+						exact
+						path="/aboutEvent/:id"
+						render={(params) => (
 							<AboutEvent {...params} />
-						</Layout>
-					)}
-				/>
+						)}
+					/>
+				</Layout>
 			</Switch>
 		</BrowserRouter>
 	);
